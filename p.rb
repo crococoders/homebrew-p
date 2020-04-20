@@ -9,7 +9,7 @@ class P < Formula
   depends_on "coreutils" => :build
 
   def install
-    system "./install.sh", prefix
+    system "make install", prefix
   end
 
   test do
